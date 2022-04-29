@@ -6,12 +6,19 @@
 import { ethers } from "hardhat";
 
 async function main() {
-  const JediNFT = await ethers.getContractFactory("JediStaking");
+  const JediNFT = await ethers.getContractFactory("JediNFT");
   const jedinft = await JediNFT.deploy();
 
   await jedinft.deployed();
 
   console.log("JediNFT deployed to:", jedinft.address);
+
+  const Jedi1155 = await ethers.getContractFactory("Jedi1155");
+  const jedi1155 = await Jedi1155.deploy();
+
+  await jedi1155.deployed();
+
+  console.log("Jedi1155 deployed to:", jedi1155.address);
 }
 
 // We recommend this pattern to be able to use async/await everywhere

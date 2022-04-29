@@ -8,20 +8,20 @@ import "@nomiclabs/hardhat-waffle";
 
 dotenv.config();
 
-task("mint", "Safe mint task with URI")
+task("mint1155", "J1155 mint task")
   .addParam("address", "Address of the contract to mint to")
-  .addParam("uri", "URI of the token")
+  .addParam("amount", "Amount of tokens to mint")
   .setAction(async (taskArgs, hre) => {
     const [signer] = await hre.ethers.getSigners();
-    const contractAddr = process.env.CONTRACT_ADDRESS;
+    const contractAddr = process.env.CONTRACT_ADDRESS_1155;
 
-    const NFTContract = await hre.ethers.getContractAt(
-      "JediNFT",
+    const Jedi1155 = await hre.ethers.getContractAt(
+      "Jedi1155",
       contractAddr as string,
       signer
     );
 
-    const result = await NFTContract.safeMintWithUri(taskArgs.address, taskArgs.uri);
+    const result = await Jedi1155.mintNewToken(taskArgs.address, taskArgs.amount, "0x00");
 
     console.log(result);
   });
