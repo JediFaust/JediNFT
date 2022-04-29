@@ -25,9 +25,9 @@
 
 ## 🚀 Link on EtherScan <a name = "etherscan"></a>
 ERC721 Contract: <br>
-https://rinkeby.etherscan.io/address/0xE115E5f1c26C1f10ec1D25702A4dA2d7C14BACf0#code
+https://rinkeby.etherscan.io/address/0xE115E5f1c26C1f10ec1D25702A4dA2d7C14BACf0#code<br>
 ERC1155 Contract: <br>
-https://rinkeby.etherscan.io/address/0x6797e8fc06143A1d4e4222BF424FFF439F3d122a#code
+https://rinkeby.etherscan.io/address/0x6797e8fc06143A1d4e4222BF424FFF439F3d122a#code<br>
 
 
 
