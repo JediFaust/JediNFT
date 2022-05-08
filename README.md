@@ -1,5 +1,5 @@
 
-<h1 align="center"><b>JediStaking Smart Contract</b></h3>
+<h1 align="center"><b>JediNFT Smart Contract</b></h3>
 
 <div align="left">
 
